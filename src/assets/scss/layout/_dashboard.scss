@@ -1,0 +1,191 @@
+.dashboardCard {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.302);
+  border-radius: 10px;
+  cursor: pointer;
+
+  .cardProb {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4AAF05;
+  }
+}
+
+.dashboardHead {
+  h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: $textColor;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    color: #000000;
+  }
+}
+
+.caseChartHead {
+  h4 {
+    font-size: 27px;
+    font-weight: 600;
+    color: #2B659D;
+  }
+}
+
+.switch-field input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+}
+
+.switch-field label {
+  display: inline-block;
+  background-color: #fff;
+  color: black;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: none;
+  padding: 6px 14px;
+  transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+  cursor: pointer;
+}
+
+.switch-field input:checked+label {
+  background-color: rgba(234, 237, 242, 0.5);
+  color: black;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  padding: 5px 10px;
+}
+
+.switch-field label:first-of-type {
+  border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+  border-radius: 0 4px 4px 0;
+}
+
+.pieChart {
+  background-color: #fff;
+  border-radius: 5px;
+
+  p {
+    color: #4F4F4F;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  h3 {
+    color: #333333;
+    font-size: 25px;
+    font-weight: 600;
+  }
+}
+
+.donut-graph-info {
+  color: #333333;
+  font-size: 14px;
+}
+
+.dashboardCalendar {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.dashboardCalendar {
+  .react-calendar {
+    max-width: 100%;
+    background: white;
+    border: none;
+  }
+
+  .react-calendar__month-view__weekdays {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    color: #787878;
+
+    abbr {
+      text-decoration: none;
+    }
+  }
+
+  .react-calendar__tile--active {
+    background: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #424242;
+    text-decoration-color: #2B659D;
+    text-decoration-thickness: 2px;
+  }
+
+  .calendarTime {
+    h3 {
+      color: #333333;
+      font-size: 25px;
+      font-weight: 600;
+    }
+
+    p {
+      color: #2B659D;
+      font-size: 22px;
+      font-weight: 500;
+    }
+  }
+
+  .calendarWeather {
+    font-size: 12px;
+    color: #3C3C43;
+  }
+
+  .calendarDivider {
+    height: 1px;
+    background-color: $borderColor;
+  }
+}
+
+.evetsList {
+  border-top: 1px solid $borderColor;
+  .eventUserInfo {
+  h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: textColor;
+  }
+  p {
+    font-size: 16px;
+    color: #9590A0;
+  }
+}
+}
+
+.chartGap {
+  width: 97%;
+}
+
+@media (max-width: 1200px) {
+  .chartGap {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .rightDashboard {
+    padding: 0 !important;
+  }
+}

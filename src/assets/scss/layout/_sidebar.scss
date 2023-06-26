@@ -1,0 +1,103 @@
+
+.citiappLogo {
+  width: 127px;
+  height: 47px;
+}
+
+.logoBottom {
+  width: 100%;
+  height: 1px;
+  background-color: $body-bg;
+}
+
+.panelHead {
+  color: #545454;
+   font-size: 14px;
+   font-weight: 500px; 
+}
+
+.addLayout {
+  background:  $addLayout;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.userProfile {
+  border: 1px solid #DBDBDB;
+  border-radius: 29px;
+  margin-top: 50px;
+  img {
+     border-radius: 50%;
+  }
+}
+
+.sidebarNav {
+  margin-top: 65px;
+}
+
+
+.sidebarArea {
+  flex-shrink: 0;
+  // width: $sidebarWidth;
+  background-color: #fff;
+  position: relative;
+  .nav-link {
+    color: #4D4D4D;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .sidenav-bg:hover {
+    background-color: rgba(134, 185, 235, 0.2);
+    border-radius: $border-radius;
+    .nav-link {
+      color: black;
+    }
+  }
+  .sidenav-bg .active {
+    background-color: $active-link;
+    border-radius: 9px;
+    color:#2B659D;
+  }
+}
+
+.toggleMenu {
+  position: absolute;
+  top: 10%;
+  background-color: #fff;
+  right: -20px;
+  padding: 10px;
+  border: 1px solid #2B659D;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mobileNav {
+  height: 10vh;
+  background-color: #fff;
+  .citiappLogoMob {
+    width: 90px;
+    height: 20px;
+  }
+  .NavList {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    left: 0;
+    background: #fff;
+    z-index: 10;
+    transition: all 700ms;
+    overflow-y: auto;
+    height: 90vh;
+
+  }
+  .slide-in {
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+  }
+  
+  .slide-out {
+    transition: transform 0.3s ease;
+    transform: translateY(-100vh);
+  }
+}
+
